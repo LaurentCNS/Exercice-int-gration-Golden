@@ -12,24 +12,22 @@
 <body>
 
     <!--EN TETE-->
-    <header>
+    <header id="home">
         <div class="navbar">
             <h1>Golden</h1>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <div>
-            <P class="welcome">Welcome to our studio</P>
+        <div class="container">
+            <P class="welcome">Welcome To Our Studio!</P>
             <P class="title">It's nice to meet you</P>
-            <button>Tell me more</button>
         </div>
+        <button>Tell me more</button>
     </header>
 
     <!--PARTIE PRINCIPALE DE LA PAGE-->
@@ -42,14 +40,14 @@
             </div>
             <div class="container">
                 <div>
-                    <img src="img/icons/icon-basket.png" alt="panier">
+                    <div class="cercle"><img src="img/icons/icon-basket.png" alt="panier"></div>
                     <h3>E-commerce</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ipsum blanditiis
                         aspernatur, aut quo adipisci magni libero distinctio temporibus corrupti accusamus dolorum
                         explicabo nulla expedita dolor excepturi neque incidunt et?</p>
                 </div>
                 <div>
-                    <img src="img/icons/icon-laptop.png" alt="mobile">
+                    <div class="cercle"><img src="img/icons/icon-laptop.png" alt="mobile"></div>
                     <h3>Responsive Web</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ipsum blanditiis
                         aspernatur, aut quo adipisci magni libero distinctio temporibus corrupti accusamus dolorum
@@ -57,7 +55,7 @@
                     </p>
                 </div>
                 <div>
-                    <img src="img/icons/icon-locked.png" alt="sécurité">
+                    <div class="cercle"><img src="img/icons/icon-locked.png" alt="sécurité"></div>
                     <h3>Web security</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ipsum blanditiis
                         aspernatur, aut quo adipisci magni libero distinctio temporibus corrupti accusamus dolorum
@@ -111,14 +109,14 @@
         </section>
 
         <!--OUR AMAZING TEAM-->
-        <section class="team">
+        <section id="about">
             <div>
                 <h2>OUR AMAZING TEAM</h2>
                 <p>Proin iaculis purus consequat sem cure</p>
             </div>
             <div class="container">
                 <div>
-                    <img src="img/team/avatar-square.jpg" alt="kimberly">
+                    <img class="user" src="img/team/avatar-square.jpg" alt="kimberly">
                     <h3>Kimberly Thompson</h3>
                     <p>Marketer</p>
                     <div class="social">
@@ -128,7 +126,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="img/team/avatar-square.jpg" alt="rico">
+                    <img class="user" src="img/team/avatar-square.jpg" alt="rico">
                     <h3>Rico Massimo</h3>
                     <p>Coder</p>
                     <div class="social">
@@ -138,7 +136,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="img/team/avatar-square.jpg" alt="uku">
+                    <img class="user" src="img/team/avatar-square.jpg" alt="uku">
                     <h3>Rico Massimo</h3>
                     <p>Coder</p>
                     <div class="social">
@@ -162,7 +160,7 @@
         </section>
 
         <!--CONTACT US-->
-        <section class="contact">
+        <section id="contact">
             <div>
                 <h2>CONTACT US</h2>
                 <p>Proin iaculis purus consequat sem cure</p>
@@ -190,13 +188,21 @@
     <!--PIEDS DE PAGE-->
     <footer>
         <p>© Copyright 2014 FreebiesXpress.com</p>
-        <div class="social">             
+        <div class="social">
             <a href="" target="_blank"><span>twitter</span></a>
             <a href="" target="_blank"><span>facebook</span></a>
             <a href="" target="_blank"><span>pinterest</span></a>
             <a href="" target="_blank"><span>google</span></a>
         </div>
     </footer>
+
+
+
+
+
+
+
+
 </body>
 
 </html>
