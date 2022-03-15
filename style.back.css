@@ -1,0 +1,590 @@
+/* ### IMPORT RESET CSS ### */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+/* ### IMPORT FONTS ### */
+@font-face {
+  font-family: 'Wisdom Script';
+  src: url('./font/WisdomScriptAJ.woff');
+}
+
+@font-face {
+  font-family: 'Droid serif';
+  src: url('./font/DroidSerif.ttf');
+}
+
+@font-face {
+  font-family: 'Droid serif';
+  font-style: italic;
+  src: url('./font/DroidSerif-Italic.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+/* ### VARIABLES ### */
+:root {
+  /*  --- FONTS ---- */
+  /* Font du logo */
+  --font-logo: 'Wisdom Script', cursive;
+  /* Font pour les titres de sections, les titres des boites, les boutons et le menu */
+  --font-title: 'Montserrat', sans-serif;
+  /* Font pour les sous-titres des menus et les sous-titre des boites*/
+  --font-subtitle: 'Droid serif', serif;
+  /* Font pour les description des boites */
+  --font-description: 'Roboto Slab', sans-serif;
+
+  /* --- COLORS --- */
+  --yellow: #fed136;
+  --darkyellow: #dfba38;
+  --black: #222222;
+  --grey: #c0c0c0;
+  --darkgrey: #b3b3b3;
+  --bg-grey: #f7f7f7;
+  --bg-dark: #222222;
+}
+
+/* ###############################
+      TEXT SETTINGS
+ ############################### */
+body,
+html {
+  text-align: center;
+  color: var(--black);
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* ###############################
+      BUTTON
+ ############################### */
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-family: var(--font-title);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color .15s ease-in-out;
+}
+
+.btn.btn-yellow {
+  color: white;
+  background: var(--yellow);
+}
+
+.btn.btn-yellow:hover {
+  background: var(--darkyellow);
+}
+
+/* ###############################
+      SPECIAL CLASSES : 
+      Colors, Displays, Text and container
+ ############################### */
+ 
+.display-1 {
+  font-family: var(--font-title);
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.display-2 {
+  font-family: var(--font-subtitle);
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+  color: inherit;
+}
+
+.copyright {
+  font-size: .85rem;
+}
+
+.bg-grey {
+  background-color: var(--bg-grey);
+}
+
+.bg-dark {
+  background-color: var(--bg-dark);
+}
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 5%;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-flex>div {
+  width: 30%;
+  margin-right: 5%;
+  margin-bottom: 3rem;
+}
+
+.container-flex>div:nth-child(3n) {
+  margin-right: 0;
+}
+
+.container-flex>div h3 {
+  margin-bottom: 0.1rem;
+}
+
+.container-flex>div p {
+  font-family: var(--font-subtitle);
+  color: var(--darkgrey);
+  font-style: italic;
+  font-size: .8rem;
+  line-height: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* ###############################
+      ICONS
+ ############################### */
+.icon {
+  display: inline-block;
+  border: 3px solid var(--yellow);
+  /* padding: 1rem; */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+.icon.basket {
+  background-image: url('./img/icons/icon-basket.png');
+}
+
+.icon.laptop {
+  background-image: url('./img/icons/icon-laptop.png');
+}
+
+.icon.locked {
+  background-image: url('./img/icons/icon-locked.png');
+  background-size: 40%;
+  background-position: 50% 40%;
+}
+
+/* ###############################
+      SOCIAL
+ ############################### */
+
+.social a {
+  display: inline-block;
+  border: 2px solid var(--black);
+  border-radius: 50%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+  transition: all .15s ease-in-out;
+}
+
+.social a>span {
+  display: none;
+}
+
+/* Black logo version */
+.social a.fb,
+.social.social-white a.fb:hover {
+  background-image: url('./img/icons/facebook-black.png');
+  background-size: 30%;
+}
+
+.social a.tw,
+.social.social-white a.tw:hover {
+  background-image: url('./img/icons/twitter-black.png');
+}
+
+.social a.pt,
+.social.social-white a.pt:hover {
+  background-image: url('./img/icons/pinterest-black.png');
+  background-size: 40%;
+}
+
+.social a.gp,
+.social.social-white a.gp:hover {
+  background-image: url('./img/icons/google+-black.png');
+}
+
+.social.social-white a,
+.social a:hover {
+  background-color: black;
+}
+
+.social.social-white a:hover {
+  background-color: white;
+}
+
+.social.social-white a.fb,
+.social a.fb:hover {
+  background-image: url('./img/icons/facebook.png');
+}
+
+.social.social-white a.tw,
+.social a.tw:hover {
+  background-image: url('./img/icons/twitter.png');
+}
+
+.social.social-white a.pt,
+.social a.pt:hover {
+  background-image: url('./img/icons/pinterest.png');
+}
+
+.social.social-white a.gp,
+.social a.gp:hover {
+  background-image: url('./img/icons/google+.png');
+}
+
+
+/* ###############################
+      HEADER
+ ############################### */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+/* TITLE */
+header h1 {
+  font-family: var(--font-logo);
+  color: var(--yellow);
+  margin: 0;
+}
+
+/* NAVBAR */
+nav {
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .8rem;
+}
+
+nav i.fas.fa-bars {
+  display: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  color: white;
+  margin-right: 1rem;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  color: var(--yellow);
+}
+
+/* ###############################
+      SECTIONS
+ ############################### */
+
+/* GLOBAL */
+section {
+  padding: 4rem 2rem;
+}
+
+section h2 {
+  font-family: var(--font-title);
+  color: var(--black);
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+section p {
+  font-family: var(--font-subtitle);
+  color: var(--darkgrey);
+  font-size: 1rem;
+}
+
+section h2+p {
+  margin: 0 0 3rem 0;
+  font-style: italic;
+}
+
+section h3 {
+  font-family: var(--font-subtitle);
+  font-size: 1rem;
+  font-weight: 600;
+  padding-top: 1rem;
+}
+
+
+/* HOME */
+section#home {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("./img/bg_header.png");
+  background-size: cover;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 8rem;
+}
+
+section#home .display-1 {
+  margin-bottom: 2.5rem;
+}
+
+section#home .display-2 {
+  margin-top: 9rem;
+  margin-bottom: 1.8rem;
+}
+
+
+/* SERVICES */
+
+section#services h3 {
+  margin-bottom: 1.2rem;
+}
+
+
+/* PORTFOLIO */
+
+.card {
+  background-color: white;
+  padding: 0;
+}
+
+.card-illustration {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-illustration img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--yellow);
+  text-transform: uppercase;
+  font-family: var(--font-title);
+  font-weight: 600;
+  font-size: .8rem;
+  width: 100%;
+  height: 0;
+  text-align: center;
+  line-height: 256px;
+  transition: .25s ease-in;
+  z-index: -1;
+}
+
+
+.overlay span {
+  border: 1px solid var(--yellow);
+  padding: .5rem;
+  border-radius: 3px;
+}
+
+.card-illustration:hover .overlay {
+  height: 100%;
+  z-index: 1;
+}
+
+/* TEAM */
+
+section#team .team-portrait {
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+section#team .team-portrait img {
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+}
+
+section#team .container-flex>p {
+  font-style: normal;
+  line-height: 1.5rem;
+}
+
+
+/* PARTNER */
+section#partner img {
+  margin-right: 2rem;
+  object-fit: contain;
+}
+
+section#partner img:last-child {
+  margin-right: 0;
+}
+
+/* CONTACT */
+section#contact h2 {
+  color: white;
+}
+
+section#contact label {
+  display: none;
+}
+
+section#contact .container-flex {
+  min-height: 10rem;
+  margin-bottom: 3rem;
+}
+
+section#contact .container-flex div {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+section#contact .container-flex .form-left {
+  margin: 0 .5rem 0 0;
+}
+
+section#contact .container-flex .form-right {
+  margin: 0 0 0 .5rem;
+}
+
+section#contact .container-flex input,
+section#contact .container-flex textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: .5rem;
+  padding: .5rem;
+  border-radius: 3px;
+  border: none;
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  font-size: .7rem;
+  color: var(--black);
+}
+
+section#contact .container-flex input {
+  height: 2.5rem;
+}
+
+section#contact .container-flex textarea {
+  height: 100%;
+}
+
+section#contact input[type="submit"] {
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  height: 4rem;
+  line-height: 4rem;
+  text-align: left;
+  position: relative;
+  padding: 0 2rem;
+}
+
+footer>span {
+  display: inline-block;
+  line-height: 4rem;
+}
+
+footer .social {
+  height: 4rem;
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 1rem;
+  /* margin-left: -150px; */
+  transform: translateX(-150px);
+}
+
+footer .social span {
+  display: none;
+}
+
+/* ###############################
+      MEDIA QUERIES
+ ############################### */
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  nav i.fas.fa-bars {
+    display: block;
+    line-height: 4rem;
+    color: var(--yellow);
+    cursor: pointer;
+  }
+
+
+  .container-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-flex>div {
+    width: 100% !important;
+  }
+
+  .container-flex img,
+  .container-flex .form-left,
+  .container-flex .form-right {
+    margin-right: 0!important;
+    margin-left: 0!important;
+  }
+
+  section#partner img {
+    margin-bottom: 1rem;
+  }
+
+  .form-right textarea {
+    min-height: 150px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .social {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(0);
+  }
+}
